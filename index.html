@@ -346,7 +346,7 @@
                 // ignore events until we see the starting event
                 continue;
               }
-              if (flow.depth === params.max_depth) {
+              if (flow.depth === Number(params.max_depth)) {
                 // break after we hit the max depth
                 return flow;
               }
